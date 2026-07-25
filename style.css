@@ -387,16 +387,3 @@ transition:all .8s ease;
 opacity:1;
 transform:translateY(0);
 }
-const sections = document.querySelectorAll(".fade-in");
-
-const observer = new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-sections.forEach(section=>{
-observer.observe(section);
-});
