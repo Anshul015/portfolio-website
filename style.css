@@ -377,3 +377,13 @@ transition:.3s;
 #topBtn:hover{
 transform:scale(1.1);
 }
+.fade-in{
+opacity:0;
+transform:translateY(50px);
+transition:all .8s ease;
+}
+
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
+}
