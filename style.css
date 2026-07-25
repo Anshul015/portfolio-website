@@ -611,3 +611,30 @@ transition:opacity .6s ease;
 #backToTop:hover{
     transform:translateY(-5px) scale(1.1);
 }
+.hero-title{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero-title span{
+    color:#3b82f6;
+}
+
+.hero-subtitle{
+    font-size:20px;
+    color:#94a3b8;
+    margin:20px 0 35px;
+}
+
+@media(max-width:768px){
+
+.hero-title{
+    font-size:38px;
+}
+
+.hero-subtitle{
+    font-size:17px;
+}
+
+}
