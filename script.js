@@ -1,19 +1,3 @@
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-};
-
-topBtn.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
 const sections = document.querySelectorAll(".fade-in");
 
 const observer = new IntersectionObserver((entries)=>{
@@ -61,22 +45,7 @@ lightbox.addEventListener("click", (e) => {
         lightbox.style.display = "none";
     }
 });
-const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
-    if(window.scrollY > 300){
-        backToTop.style.display = "block";
-    }else{
-        backToTop.style.display = "none";
-    }
-});
-
-backToTop.addEventListener("click", () => {
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-});
 const filterButtons = document.querySelectorAll(".filter-btn");
 const portfolioCards = document.querySelectorAll(".portfolio-card");
 
