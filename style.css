@@ -440,3 +440,38 @@ body::after {
         transform: translateY(80px);
     }
 }
+/* Mobile Menu */
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+        text-align:center;
+        display:none;
+        padding:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
