@@ -569,9 +569,12 @@ text-align:center;
 }
 
 .loader-content h1{
-color:#fff;
-font-size:42px;
-margin-bottom:10px;
+    font-size:56px;
+    font-weight:800;
+    letter-spacing:4px;
+    color:#ffffff;
+    text-transform:uppercase;
+    animation:glow 2s ease-in-out infinite;
 }
 
 .loader-content p{
@@ -595,16 +598,17 @@ background:#3b82f6;
 animation:load 1.2s infinite;
 }
 
-@keyframes load{
-0%{
-transform:translateX(-100%);
-}
-100%{
-transform:translateX(350%);
-}
-}
-
-.loader-hide{
-opacity:0;
-pointer-events:none;
+@keyframes glow{
+    0%{
+        text-shadow:0 0 10px #3b82f6;
+    }
+    50%{
+        text-shadow:
+        0 0 20px #3b82f6,
+        0 0 40px #2563eb,
+        0 0 60px #1d4ed8;
+    }
+    100%{
+        text-shadow:0 0 10px #3b82f6;
+    }
 }
