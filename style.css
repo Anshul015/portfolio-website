@@ -688,28 +688,3 @@ transition:opacity .6s ease;
     font-size:22px;
     font-weight:700;
 }
-.footer{
-    background:#0f172a;
-    text-align:center;
-    padding:50px 20px;
-    margin-top:80px;
-    border-top:1px solid rgba(255,255,255,.08);
-}
-
-.footer h3{
-    color:#fff;
-    font-size:28px;
-    margin-bottom:12px;
-}
-
-.footer p{
-    color:#94a3b8;
-    margin:10px 0;
-    font-size:16px;
-    line-height:1.6;
-}
-
-.footer p:hover{
-    color:#3b82f6;
-    transition:.3s;
-}
