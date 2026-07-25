@@ -27,3 +27,9 @@ entry.target.classList.add("show");
 sections.forEach(section=>{
 observer.observe(section);
 });
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
