@@ -520,3 +520,7 @@ to{
 }
 
 }
+.logo{
+    cursor:pointer;
+    font-weight:700;
+}
