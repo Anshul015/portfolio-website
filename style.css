@@ -22,6 +22,7 @@ padding:25px 8%;
 background:#111827;
 position:sticky;
 top:0;
+z-index:100;    
 }
 
 .logo{
@@ -729,7 +730,14 @@ transition:opacity .6s ease;
 .hero-shapes{
     position:absolute;
     inset:0;
-    z-index:-1;
+    z-index:0;
+    pointer-events:none;
+}
+
+.hero-text,
+.hero-image{
+    position:relative;
+    z-index:2;
 }
 
 .shape{
