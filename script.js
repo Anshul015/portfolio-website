@@ -30,6 +30,13 @@ observer.observe(section);
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
+menuToggle.onclick = function () {
     navLinks.classList.toggle("active");
+};
+
+// Menu link click karne ke baad close
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.onclick = () => {
+        navLinks.classList.remove("active");
+    };
 });
