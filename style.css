@@ -663,3 +663,28 @@ transition:opacity .6s ease;
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(37,99,235,.3);
 }
+.skill-card{
+    background:#111827;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:25px;
+    transition:all .35s ease;
+    cursor:pointer;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    border-color:#3b82f6;
+    box-shadow:0 15px 35px rgba(59,130,246,.25);
+}
+
+.skill-card h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.skill-card span{
+    color:#3b82f6;
+    font-size:22px;
+    font-weight:700;
+}
