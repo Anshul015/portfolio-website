@@ -454,24 +454,26 @@ body::after {
 
 @media(max-width:768px){
 
-    .menu-toggle{
-        display:block;
-    }
+.menu-toggle{
+    display:block;
+}
 
-    .nav-links{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#111827;
-        flex-direction:column;
-        text-align:center;
-        display:none;
-        padding:20px;
-    }
+.nav-links{
 
-    .nav-links.active{
-        display:flex;
-    }
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#111827;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+    padding:20px;
+}
+
+/* Menu Open */
+.nav-links.active{
+    display:flex;
+}
 
 }
