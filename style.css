@@ -688,3 +688,11 @@ transition:opacity .6s ease;
     font-size:22px;
     font-weight:700;
 }
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #3b82f6;
+    box-shadow:0 0 40px rgba(59,130,246,.4);
+}
