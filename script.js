@@ -40,14 +40,8 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navLinks.classList.remove("active");
     };
 });
-window.addEventListener("load", function(){
-
-    const loader = document.getElementById("loader");
-
-    setTimeout(function(){
-
-        loader.classList.add("hide");
-
-    },1200);
-
-});
+window.onload = function () {
+  setTimeout(function () {
+    document.getElementById("loader").classList.add("loader-hide");
+  }, 1500);
+};
