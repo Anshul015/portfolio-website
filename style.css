@@ -905,3 +905,21 @@ transition:opacity .6s ease;
     color:#3b82f6;
     font-size:18px;
 }
+.portfolio-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:0.5s ease;
+}
+
+.portfolio-card:hover img{
+    transform:scale(1.08);
+}
+
+.portfolio-card{
+    border-radius:20px;
+    overflow:hidden;
+    background:#111827;
+    cursor:pointer;
+}
