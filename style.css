@@ -1116,11 +1116,12 @@ transition:opacity .6s ease;
 }
 /* ===== Animated Gradient Name ===== */
 
-.gradient-name{
+..name-text{
     color:#ffffff;
-    font-weight:800;
-    text-shadow:
-    0 5px 20px rgba(0,0,0,0.4);
+    font-weight:900;
+    position:relative;
+    z-index:5;
+    letter-spacing:1px;
 }
     background-size:200%;
 
