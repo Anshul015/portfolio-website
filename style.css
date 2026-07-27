@@ -1033,3 +1033,84 @@ transition:opacity .6s ease;
     }
 
 }
+/* ===== Premium Hero Animated Glow ===== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-right,
+.hero-image{
+    position:relative;
+    z-index:2;
+}
+
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:
+    radial-gradient(circle,
+    rgba(59,130,246,0.45),
+    rgba(139,92,246,0.25),
+    transparent 70%);
+
+    top:50%;
+    right:10%;
+    transform:translateY(-50%);
+
+    filter:blur(30px);
+    animation:premiumGlow 8s ease-in-out infinite;
+    z-index:0;
+}
+
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+
+    background:
+    radial-gradient(circle,
+    rgba(6,182,212,0.35),
+    transparent 70%);
+
+    left:5%;
+    bottom:10%;
+
+    filter:blur(40px);
+    animation:secondGlow 10s ease-in-out infinite;
+    z-index:0;
+}
+
+
+@keyframes premiumGlow{
+
+0%,100%{
+    transform:translateY(-50%) scale(1);
+    opacity:.6;
+}
+
+50%{
+    transform:translateY(-50%) scale(1.25);
+    opacity:1;
+}
+
+}
+
+
+@keyframes secondGlow{
+
+0%,100%{
+    transform:translate(0,0);
+}
+
+50%{
+    transform:translate(40px,-30px);
+}
+
+}
