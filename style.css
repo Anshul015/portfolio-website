@@ -933,3 +933,27 @@ transition:opacity .6s ease;
     margin-bottom:15px;
     letter-spacing:.5px;
 }
+#loader{
+    position:fixed;
+    inset:0;
+    background:#0b0f19;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999999;
+}
+
+.loader-circle{
+    width:70px;
+    height:70px;
+    border:6px solid rgba(255,255,255,.15);
+    border-top:6px solid #3b82f6;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
