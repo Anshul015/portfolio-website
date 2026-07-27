@@ -1114,3 +1114,39 @@ transition:opacity .6s ease;
 }
 
 }
+/* ===== Animated Gradient Name ===== */
+
+.gradient-name{
+
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #06b6d4,
+        #8b5cf6,
+        #3b82f6
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:gradientMove 5s ease infinite;
+}
+
+
+@keyframes gradientMove{
+
+0%{
+    background-position:0% 50%;
+}
+
+50%{
+    background-position:100% 50%;
+}
+
+100%{
+    background-position:0% 50%;
+}
+
+}
