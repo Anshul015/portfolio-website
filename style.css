@@ -1117,14 +1117,11 @@ transition:opacity .6s ease;
 /* ===== Animated Gradient Name ===== */
 
 .gradient-name{
-
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #60a5fa,
-        #ffffff
-    );
-
+    color:#ffffff;
+    font-weight:800;
+    text-shadow:
+    0 5px 20px rgba(0,0,0,0.4);
+}
     background-size:200%;
 
     -webkit-background-clip:text;
