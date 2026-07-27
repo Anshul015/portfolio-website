@@ -1164,3 +1164,11 @@ transition:opacity .6s ease;
     color:#ffffff;
     margin:0 10px;
 }
+.hero-desc{
+    max-width:550px;
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.8;
+    margin:25px 0 35px;
+    letter-spacing:.3px;
+}
