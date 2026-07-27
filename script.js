@@ -117,3 +117,13 @@ window.addEventListener("scroll", () => {
         progress + "%";
 
 });
+const cursor = document.querySelector(".cursor");
+const cursorDot = document.querySelector(".cursor-dot");
+
+document.addEventListener("mousemove",(e)=>{
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+    cursorDot.style.left = e.clientX + "px";
+    cursorDot.style.top = e.clientY + "px";
+});
